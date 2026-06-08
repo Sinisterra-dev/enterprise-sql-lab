@@ -1,8 +1,10 @@
 # enterprise-sql-lab
 
-Laboratorio SQL empresarial orientado a **MySQL 8+**, diseñado para practicar desde SQL básico hasta análisis avanzado con una base de e-commerce/retail realista (contexto LATAM/Colombia).
+Laboratorio SQL empresarial orientado a **MySQL 8+** y **PostgreSQL 14+**, diseñado para practicar desde SQL básico hasta análisis avanzado con una base de e-commerce/retail realista (contexto LATAM/Colombia).
 
 ## Estructura del proyecto
+
+### MySQL
 
 - `/sql/01_schema.sql`  
   Crea la base `enterprise_sql_lab`, tablas, claves primarias/foráneas, restricciones `NOT NULL`, `UNIQUE`, `CHECK`, y motor `InnoDB` con `utf8mb4`.
@@ -13,6 +15,17 @@ Laboratorio SQL empresarial orientado a **MySQL 8+**, diseñado para practicar d
 - `/sql/04_optional_procedures.sql`  
   Procedimientos opcionales para recalcular totales, registrar auditoría y expandir clientes sintéticos.
 
+### PostgreSQL
+
+- `/sql_postgresql/01_schema.sql`  
+  Crea la base `enterprise_sql_lab`, tipos `ENUM`, tablas, restricciones e índices base.
+- `/sql_postgresql/02_seed_data.sql`  
+  Carga datos semilla y generación masiva con CTE recursivos.
+- `/sql_postgresql/03_indexes_views.sql`  
+  Crea índices y vistas analíticas equivalentes.
+- `/sql_postgresql/04_optional_procedures.sql`  
+  Crea procedimientos opcionales en `PL/pgSQL`.
+
 ## Cómo ejecutar (MySQL Workbench)
 
 1. Abrir conexión en MySQL Workbench (MySQL 8+).
@@ -22,6 +35,17 @@ Laboratorio SQL empresarial orientado a **MySQL 8+**, diseñado para practicar d
    3. `sql/03_indexes_views.sql`
    4. `sql/04_optional_procedures.sql` (opcional)
 3. Refrescar el esquema `enterprise_sql_lab`.
+
+## Cómo ejecutar (PostgreSQL con psql)
+
+1. Abrir terminal con acceso a PostgreSQL (14+).
+2. Ejecutar scripts en este orden:
+   1. `psql -U <usuario> -f sql_postgresql/01_schema.sql`
+   2. `psql -U <usuario> -f sql_postgresql/02_seed_data.sql`
+   3. `psql -U <usuario> -f sql_postgresql/03_indexes_views.sql`
+   4. `psql -U <usuario> -f sql_postgresql/04_optional_procedures.sql` (opcional)
+
+> Nota: los scripts de PostgreSQL usan `\connect`, por lo que deben ejecutarse con `psql` (no con una herramienta que ignore metacomandos).
 
 ## Alcance del modelo
 
@@ -51,4 +75,7 @@ La base está preparada para practicar:
 
 ## Uso posterior con Python
 
-La estructura es compatible para consumo desde Python (por ejemplo con `mysql-connector-python`, `SQLAlchemy` y `pandas`) para análisis exploratorio y modelado de datos.
+La estructura es compatible para consumo desde Python:
+
+- MySQL: `mysql-connector-python`, `SQLAlchemy`, `pandas`
+- PostgreSQL: `psycopg`, `SQLAlchemy`, `pandas`
