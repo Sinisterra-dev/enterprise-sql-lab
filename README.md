@@ -79,3 +79,4 @@ La estructura es compatible para consumo desde Python:
 
 - MySQL: `mysql-connector-python`, `SQLAlchemy`, `pandas`
 - PostgreSQL: `psycopg`, `SQLAlchemy`, `pandas`
+Sinisterradev.com 
