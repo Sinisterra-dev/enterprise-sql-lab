@@ -142,7 +142,9 @@ WHERE activo = TRUE OR precio_venta > 350000;
    O cuyo precio de venta sea mayor a $300.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE costo_unitario < 80000 OR precio_venta > 300000;
 
 /* ---------------------------------------------------------------------
    10. PRODUCTOS
