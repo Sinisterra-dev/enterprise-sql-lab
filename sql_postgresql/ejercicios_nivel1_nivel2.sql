@@ -172,6 +172,9 @@ WHERE categoria_id IN (1, 2, 3);
    Mostrar los productos cuyo proveedor_id NO sea 1, 2 ni 3.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE proveedor_id NOT IN (1, 2, 3);
 
 
 /* ---------------------------------------------------------------------
