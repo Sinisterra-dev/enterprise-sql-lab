@@ -194,6 +194,10 @@ WHERE precio_venta NOT BETWEEN 100000 AND 300000;
    Y cuyo peso esté entre 1 y 3 kg.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE precio_venta > 250000
+   AND peso_kg BETWEEN 1 AND 3;
 
 
 /* ---------------------------------------------------------------------
