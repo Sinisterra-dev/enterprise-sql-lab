@@ -131,7 +131,9 @@ WHERE activo = TRUE AND precio_venta > 300000;
    superior a $350.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE activo = TRUE OR precio_venta > 350000;
 
 /* ---------------------------------------------------------------------
    09. PRODUCTOS
