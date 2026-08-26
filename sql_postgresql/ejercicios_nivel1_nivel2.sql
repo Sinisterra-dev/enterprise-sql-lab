@@ -93,7 +93,9 @@ WHERE precio_venta > '200000';
    Mostrar los productos cuyo costo unitario sea menor a $100.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE costo_unitario < '100000';
 
 /* ---------------------------------------------------------------------
    05. PRODUCTOS
