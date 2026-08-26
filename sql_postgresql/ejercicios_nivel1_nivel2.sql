@@ -230,6 +230,9 @@ FROM productos;
    precio_venta - costo_unitario
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT nombre, precio_venta, costo_unitario,
+       precio_venta - costo_unitario AS margen_absoluto
+FROM productos;
 
 
 /* ---------------------------------------------------------------------
