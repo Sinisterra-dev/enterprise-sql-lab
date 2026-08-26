@@ -70,7 +70,7 @@ al Nivel 3 — JOIN.
    Mostrar todas las columnas.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT*FROM productos;
 
 /* ---------------------------------------------------------------------
    02. PRODUCTOS
