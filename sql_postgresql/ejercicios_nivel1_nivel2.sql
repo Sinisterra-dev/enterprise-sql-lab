@@ -121,7 +121,9 @@ WHERE peso_kg <= 1;
    superior a $300.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE activo = TRUE AND precio_venta > 300000;
 
 /* ---------------------------------------------------------------------
    08. PRODUCTOS
