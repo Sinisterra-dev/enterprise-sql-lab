@@ -255,6 +255,11 @@ FROM productos;
    Debes mostrar también la columna calculada.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT nombre, precio_venta, costo_unitario,
+       precio_venta - costo_unitario AS margen_absoluto
+FROM productos
+ORDER BY margen_absoluto DESC
+LIMIT 10;
 
 
 /* ---------------------------------------------------------------------
