@@ -218,6 +218,8 @@ WHERE activo = TRUE
    sku_producto y precio.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT sku AS sku_producto, precio_venta AS precio
+FROM productos;
 
 
 /* ---------------------------------------------------------------------
