@@ -183,6 +183,9 @@ WHERE proveedor_id NOT IN (1, 2, 3);
    $100.000 y $300.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE precio_venta NOT BETWEEN 100000 AND 300000;
 
 
 /* ---------------------------------------------------------------------
