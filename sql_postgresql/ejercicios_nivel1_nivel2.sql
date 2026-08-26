@@ -151,6 +151,9 @@ WHERE costo_unitario < 80000 OR precio_venta > 300000;
    Mostrar productos que NO estén activos.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE activo = false;
 
 
 /* ---------------------------------------------------------------------
