@@ -84,7 +84,9 @@ SELECT sku, nombre, precio_venta FROM productos;
    Mostrar los productos cuyo precio de venta sea superior a $200.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE precio_venta > '200000';
 
 /* ---------------------------------------------------------------------
    04. PRODUCTOS
