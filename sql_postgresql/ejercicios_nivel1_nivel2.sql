@@ -267,6 +267,11 @@ LIMIT 10;
    Mostrar los 10 productos con menor margen absoluto.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT nombre, precio_venta, costo_unitario,
+       precio_venta - costo_unitario AS margen_absoluto
+FROM productos
+ORDER BY margen_absoluto ASC
+LIMIT 10;
 
 
 /* ---------------------------------------------------------------------
