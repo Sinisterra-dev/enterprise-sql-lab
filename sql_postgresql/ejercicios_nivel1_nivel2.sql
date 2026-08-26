@@ -77,7 +77,7 @@ SELECT*FROM productos;
    Mostrar únicamente el SKU, nombre y precio de venta de cada producto.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT sku, nombre, precio_venta FROM productos;
 
 /* ---------------------------------------------------------------------
    03. PRODUCTOS
