@@ -162,6 +162,9 @@ WHERE activo = false;
    No utilizar JOIN.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE categoria_id IN (1, 2, 3);
 
 
 /* ---------------------------------------------------------------------
