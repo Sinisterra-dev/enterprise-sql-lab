@@ -206,6 +206,10 @@ WHERE precio_venta > 250000
    pero únicamente si están activos.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
+SELECT *
+FROM productos
+WHERE activo = TRUE
+   AND (precio_venta < 80000 OR precio_venta > 300000);
 
 
 /* ---------------------------------------------------------------------
