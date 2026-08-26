@@ -111,7 +111,9 @@ WHERE precio_venta BETWEEN '100000' and '250000';
    Mostrar productos cuyo peso sea menor o igual a 1 kg.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE peso_kg <= 1;
 
 /* ---------------------------------------------------------------------
    07. PRODUCTOS
