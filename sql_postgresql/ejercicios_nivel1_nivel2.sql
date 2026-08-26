@@ -102,7 +102,9 @@ WHERE costo_unitario < '100000';
    Mostrar productos cuyo precio de venta esté entre $100.000 y $250.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE precio_venta BETWEEN '100000' and '250000';
 
 /* ---------------------------------------------------------------------
    06. PRODUCTOS
