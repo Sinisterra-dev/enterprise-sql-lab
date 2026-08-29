@@ -320,7 +320,9 @@ OFFSET 30
    Utiliza IN.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE (categoria_id IN (1,4,7,10))
 
 /* ---------------------------------------------------------------------
    25. PRODUCTOS
@@ -328,7 +330,9 @@ OFFSET 30
    Y cuyo precio de venta sea superior a $150.000.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE proveedor_id IN (1,5,10,15,20) AND precio_venta > 150000
 
 /* ---------------------------------------------------------------------
    26. PRODUCTOS
