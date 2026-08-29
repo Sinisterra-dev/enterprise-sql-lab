@@ -307,7 +307,11 @@ OFFSET 10;
    Utiliza LIMIT + OFFSET.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT nombre, precio_venta
+FROM productos
+ORDER BY nombre ASC
+LIMIT 15
+OFFSET 30
 
 /* ---------------------------------------------------------------------
    24. PRODUCTOS
