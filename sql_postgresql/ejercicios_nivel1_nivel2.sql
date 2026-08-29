@@ -292,7 +292,11 @@ ORDER BY precio_venta DESC, nombre ASC;
    Utiliza LIMIT + OFFSET.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT nombre, precio_venta
+FROM productos
+ORDER BY precio_venta DESC
+LIMIT 10
+OFFSET 10;
 
 /* ---------------------------------------------------------------------
    23. PRODUCTOS
