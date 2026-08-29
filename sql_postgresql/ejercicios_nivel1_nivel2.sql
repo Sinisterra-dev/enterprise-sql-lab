@@ -280,7 +280,9 @@ LIMIT 10;
    a menor y, en caso de empate, por nombre de forma ascendente.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT nombre, precio_venta
+FROM productos
+ORDER BY precio_venta DESC, nombre ASC;
 
 /* ---------------------------------------------------------------------
    22. PRODUCTOS
