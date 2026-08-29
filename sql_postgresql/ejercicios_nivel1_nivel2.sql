@@ -340,7 +340,9 @@ WHERE proveedor_id IN (1,5,10,15,20) AND precio_venta > 150000
    Utiliza NOT IN.
    --------------------------------------------------------------------- */
 -- Escribe tu consulta aquí:
-
+SELECT *
+FROM productos
+WHERE categoria_id NOT IN (2,6,8,11)
 
 /* ---------------------------------------------------------------------
    27. PRODUCTOS
